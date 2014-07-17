@@ -17,6 +17,9 @@ function SendGridTransport(options) {
 }
 
 SendGridTransport.prototype.send = function(mail, callback) {
+  if (typeof(mail.data.to) === 'string') {
+    mail.data.to = mail.data.to.split(/[ ,]+/);
+  }
   this.sendgrid.send(mail.data, function(err, json) {
     callback(err, json);
   });
