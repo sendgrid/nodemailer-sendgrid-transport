@@ -15,13 +15,15 @@ var sgTransport = require('nodemailer-sendgrid-transport');
 
 var options = {
 	auth: {
-		api_user: process.env['SENDGRID_USERNAME'],
-		api_key: process.env['SENDGRID_PASSWORD']
+		api_user: 'SENDGRID_USERNAME',
+		api_key: 'SENDGRID_PASSWORD'
 	}
 }
 	
-var mailer = nodemailer.createTransport(sgnodemailer(options));
+var mailer = nodemailer.createTransport(sgTransport(options));
 ```
+
+Note: We suggest storing your SendGrid username and password as enviroment variables.
 
 Create an email and send it off!
 
