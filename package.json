@@ -1,6 +1,6 @@
 {
   "name": "nodemailer-sendgrid-transport",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SendGrid transport for Nodemailer",
   "main": "src/sendgrid-transport.js",
   "scripts": {
@@ -10,7 +10,11 @@
     "SendGrid",
     "Nodemailer"
   ],
-  "author": "Eddie Zaneski",
+  "author": "SendGrid <community@sendgrid.com> (sendgrid.com)",
+  "contributors": [
+    "Eddie Zaneski <eddiezane@sendgrid.com",
+    "Will Smidlein <ws@sendgrid.com>"
+   ],
   "license": "MIT",
   "dependencies": {
     "sendgrid": "^1.1.0"

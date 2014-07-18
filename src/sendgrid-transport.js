@@ -17,10 +17,17 @@ function SendGridTransport(options) {
 }
 
 SendGridTransport.prototype.send = function(mail, callback) {
-  if (typeof(mail.data.to) === 'string') {
-    mail.data.to = mail.data.to.split(/[ ,]+/);
+  var email = mail.data;
+
+  if (typeof(email.to) === 'string') {
+    email.to = mail.data.to.split(/[ ,]+/);
   }
-  this.sendgrid.send(mail.data, function(err, json) {
+
+  if (email.attachments) {
+    email.files = email.attachments;
+  }
+
+  this.sendgrid.send(email, function(err, json) {
     callback(err, json);
   });
 };
