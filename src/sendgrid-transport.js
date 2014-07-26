@@ -27,6 +27,12 @@ SendGridTransport.prototype.send = function(mail, callback) {
     email.files = email.attachments;
   }
 
+  var fromSplit = email.from.match(/(.*)\<(.*)\>/)
+  if(fromSplit){
+    email.fromname = fromSplit[1].trim();
+    email.from = fromSplit[2];
+  }
+
   this.sendgrid.send(email, function(err, json) {
     callback(err, json);
   });
