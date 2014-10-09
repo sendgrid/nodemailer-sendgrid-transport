@@ -6,6 +6,10 @@
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sendgrid/nodemailer-sendgrid-transport.git"
+  },
   "keywords": [
     "SendGrid",
     "Nodemailer"
