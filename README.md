@@ -1,6 +1,6 @@
 # nodemailer-sendgrid-transport
 
-This module is a transport plugin for [Nodemailer](https://github.com/andris9/Nodemailer) that makes it possible to send through SendGrids Web API!
+This module is a transport plugin for [Nodemailer](https://github.com/andris9/Nodemailer) that makes it possible to send through [SendGrid's Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)!
 
 ## Usage
 Install via npm.
