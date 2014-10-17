@@ -1,6 +1,6 @@
 {
   "name": "nodemailer-sendgrid-transport",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "SendGrid transport for Nodemailer",
   "main": "src/sendgrid-transport.js",
   "scripts": {
@@ -21,7 +21,7 @@
    ],
   "license": "MIT",
   "dependencies": {
-    "sendgrid": "^1.1.0"
+    "sendgrid": "^1.2.1"
   },
   "devDependencies": {
     "chai": "^1.9.1",
