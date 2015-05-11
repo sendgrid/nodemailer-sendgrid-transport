@@ -16,8 +16,21 @@ function SendGridTransport(options) {
   this.sendgrid = SendGrid(this.options.auth.api_user, this.options.auth.api_key);
 }
 
+// if in "name" <address@example.com> format, reformat to just address@example.com
+function trimReplyTo(a) {
+    if (a.indexOf('<') >= 0 && a.indexOf('>') > 0) {
+        return a.substring(a.indexOf('<')+1, a.indexOf('>'));  
+    } 
+    return a;
+}
+
 SendGridTransport.prototype.send = function(mail, callback) {
   var email = mail.data;
+
+  // reformat replyTo to replyto
+  if (email.replyTo) {
+    email.replyto = trimReplyTo(email.replyTo);
+  }
 
   // fetch envelope data from the message object
   var addresses = mail.message.getAddresses();
