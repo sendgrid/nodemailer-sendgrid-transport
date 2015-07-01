@@ -11,17 +11,17 @@
     "url": "git://github.com/sendgrid/nodemailer-sendgrid-transport.git"
   },
   "keywords": [
-    "SendGrid",
-    "Nodemailer"
+    "Nodemailer",
+    "SendGrid"
   ],
   "author": "SendGrid <community@sendgrid.com> (sendgrid.com)",
   "contributors": [
     "Eddie Zaneski <eddiezane@sendgrid.com",
     "Will Smidlein <ws@sendgrid.com>"
-   ],
+  ],
   "license": "MIT",
   "dependencies": {
-    "sendgrid": "^1.2.1"
+    "sendgrid": "^1.8.0"
   },
   "devDependencies": {
     "chai": "^1.9.1",
