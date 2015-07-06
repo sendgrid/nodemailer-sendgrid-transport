@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '0.8'
+- '0.10'
+- '0.12'
+- iojs
+before_install:
+- npm install -g npm@next
+notifications:
+  hipchat:
+    rooms:
+      secure: wIUsb9E0kurkWR1DgtvkpfOYCsQqrIfPSWh5mnKV604MX9IHwYxCLDTdoFV+zs9jabV2wGA33WjE+he5X5yjYHhqfxVTU0q4R5VG8A1PJqpGwnXk/cYQIUD7m+oAV/CTCzG1ldj9aq9RdHPdClCIk4JInziNW5P30lV3Yeqq2z0=
+    template:
+    - '<a href="https://travis-ci.org/%{repository}/builds/%{build_id}">%{repository}
+      Build %{build_number}</a> on branch <i>%{branch}</i> by %{author}: <strong>%{message}</strong>
+      <a href="https://github.com/sendgrid/docs/commits/%{commit}">View on GitHub</a>'
+    format: html
+    notify: true
