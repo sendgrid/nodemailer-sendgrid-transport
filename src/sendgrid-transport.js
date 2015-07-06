@@ -22,7 +22,9 @@ SendGridTransport.prototype.send = function(mail, callback) {
   // fetch envelope data from the message object
   var addresses = mail.message.getAddresses();
   var from = [].concat(addresses.from || addresses.sender || addresses['reply-to'] || []).shift();
-  var to = [].concat(addresses.to || []).concat(addresses.cc || []).concat(addresses.bcc || []);
+  var to = [].concat(addresses.to || []);
+  var cc = [].concat(addresses.cc || []);
+  var bcc = [].concat(addresses.bcc || []);
 
   // populate from and fromname
   if (from) {
@@ -42,6 +44,15 @@ SendGridTransport.prototype.send = function(mail, callback) {
 
   email.toname = to.map(function(rcpt) {
     return rcpt.name || '';
+  });
+
+  // populate cc and bcc arrays
+  email.cc = cc.map(function(rcpt) {
+    return rcpt.address || '';
+  });
+
+  email.bcc = bcc.map(function(rcpt) {
+    return rcpt.address || '';
   });
 
   // a list for processing attachments
