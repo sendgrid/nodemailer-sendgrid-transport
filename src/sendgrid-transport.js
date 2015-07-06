@@ -13,7 +13,14 @@ function SendGridTransport(options) {
   this.options = options;
   this.name = 'SendGrid';
   this.version = packageData.version;
-  this.sendgrid = SendGrid(this.options.auth.api_user, this.options.auth.api_key);
+
+  if (!this.options.auth.api_user) {
+    // api key
+    this.sendgrid = SendGrid(this.options.auth.api_key);
+  } else {
+    // username + password
+    this.sendgrid = SendGrid(this.options.auth.api_user, this.options.auth.api_key);
+  }
 }
 
 SendGridTransport.prototype.send = function(mail, callback) {

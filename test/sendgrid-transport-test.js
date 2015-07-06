@@ -10,6 +10,10 @@ describe('sendgrid-transport', function() {
 		transport = sgTransport({ 'auth': { api_user: 'test', api_key: 'test' } })
 	});
 
+	it('should take an apikey', function() {
+		transport = sgTransport({ 'auth': { api_key: 'test' } })
+	});
+
 	it('should have a name and version', function() {
 		expect(transport.name).to.eq('SendGrid')
 		expect(transport.version).to.eq(pkg.version)
