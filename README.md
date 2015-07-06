@@ -13,6 +13,16 @@ Require the module and initialize it with your SendGrid credentials.
 var nodemailer = require('nodemailer');
 var sgTransport = require('nodemailer-sendgrid-transport');
 
+// api key https://sendgrid.com/docs/Classroom/Send/api_keys.html
+var options = {
+	auth: {
+		api_key: 'SENDGRID_PASSWORD'
+	}
+}
+
+// or
+
+// username + password
 var options = {
 	auth: {
 		api_user: 'SENDGRID_USERNAME',
