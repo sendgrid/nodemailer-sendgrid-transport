@@ -112,7 +112,12 @@ SendGridTransport.prototype.send = function(mail, callback) {
 
     // if all parts are processed, send out the e-mail
     if (pos >= contents.length) {
-      return _self.sendgrid.send(email, function(err, json) {
+      var sendgridEmail = new _self.sendgrid.Email(email);
+      if (_self.options.asmGroupId) {
+        sendgridEmail.setASMGroupID(_self.options.asmGroupId);
+      }
+
+      return _self.sendgrid.send(sendgridEmail, function(err, json) {
         callback(err, json);
       });
     }
