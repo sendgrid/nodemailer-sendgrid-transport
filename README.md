@@ -56,6 +56,16 @@ mailer.sendMail(email, function(err, res) {
 	console.log(res);
 });
 ```
+
+## Deploying
+
+* Confirm tests pass
+* Bump the version in `README.md`, `package.json`, `test/sendgrid-transport-test.js`
+* Update `CHANGELOG.md`
+* Confirm tests pass
+* Commit `Version bump vX.X.X`
+* `npm publish`
+* Release tag on GitHub `vX.X.X`
+
 ## License
 Licensed under the MIT License.
-
