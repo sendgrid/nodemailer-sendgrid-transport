@@ -19,7 +19,7 @@ var sgTransport = require('nodemailer-sendgrid-transport');
 // api key https://sendgrid.com/docs/Classroom/Send/api_keys.html
 var options = {
 	auth: {
-		api_key: 'SENDGRID_PASSWORD'
+		api_key: 'SENDGRID_APIKEY'
 	}
 }
 
