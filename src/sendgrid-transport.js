@@ -119,7 +119,7 @@ SendGridTransport.prototype.send = function(mail, callback) {
         if(Array.isArray(email.categories) && email.categories.length) {
           categories = email.categories;
         } else if(typeof email.categories === 'string') {
-          categories = email.categories.split(/\s*,\s*/));
+          categories = email.categories.split(/\s*,\s*/);
         }
 
         categories.forEach(function(category) {
