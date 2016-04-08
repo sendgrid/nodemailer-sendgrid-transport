@@ -114,15 +114,17 @@ SendGridTransport.prototype.send = function(mail, callback) {
     if (pos >= contents.length) {
       var sendgridEmail = new _self.sendgrid.Email(email);
 
-
       if (email.categories) {
+        var categories = [];
         if(Array.isArray(email.categories) && email.categories.length) {
-          email.categories.forEach(function(category) {
-            sendgridEmail.addCategory(category);
-          });
+          categories = email.categories;
         } else if(typeof email.categories === 'string') {
-          sendgridEmail.addCategory(categories);
+          categories = email.categories.split(/\s*,\s*/));
         }
+
+        categories.forEach(function(category) {
+          sendgridEmail.addCategory(category);
+        });
       }
 
       return _self.sendgrid.send(sendgridEmail, function(err, json) {
