@@ -26,8 +26,8 @@ function SendGridTransport(options) {
 // if in "name" <address@example.com> format, reformat to just address@example.com
 function trimReplyTo(a) {
     if (a.indexOf('<') >= 0 && a.indexOf('>') > 0) {
-        return a.substring(a.indexOf('<')+1, a.indexOf('>'));  
-    } 
+        return a.substring(a.indexOf('<')+1, a.indexOf('>'));
+    }
     return a;
 }
 
@@ -112,7 +112,22 @@ SendGridTransport.prototype.send = function(mail, callback) {
 
     // if all parts are processed, send out the e-mail
     if (pos >= contents.length) {
-      return _self.sendgrid.send(email, function(err, json) {
+      var sendgridEmail = new _self.sendgrid.Email(email);
+
+      if (email.categories) {
+        var categories = [];
+        if(Array.isArray(email.categories) && email.categories.length) {
+          categories = email.categories;
+        } else if(typeof email.categories === 'string') {
+          categories = email.categories.split(/\s*,\s*/);
+        }
+
+        categories.forEach(function(category) {
+          sendgridEmail.addCategory(category);
+        });
+      }
+
+      return _self.sendgrid.send(sendgridEmail, function(err, json) {
         callback(err, json);
       });
     }
