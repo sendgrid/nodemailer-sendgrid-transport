@@ -1,31 +1,31 @@
 {
-    "name": "nodemailer-sendgrid-transport",
-    "version": "0.3.0",
-    "description": "SendGrid transport for Nodemailer",
-    "main": "src/sendgrid-transport.js",
-    "scripts": {
-        "test": "mocha"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/sendgrid/nodemailer-sendgrid-transport.git"
-    },
-    "keywords": [
-        "Nodemailer",
-        "SendGrid"
-    ],
-    "author": "SendGrid <community@sendgrid.com> (sendgrid.com)",
-    "contributors": [
-        "Eddie Zaneski <eddiezane@sendgrid.com",
-        "Will Smidlein <ws@sendgrid.com>",
-        "Geoffroy Lesage <geoffroy@starchup.com>"
-    ],
-    "license": "MIT",
-    "dependencies": {
-        "sendgrid": "4.5.0"
-    },
-    "devDependencies": {
-        "chai": "^1.9.1",
-        "mocha": "^1.20.1"
-    }
+  "name": "nodemailer-sendgrid-transport",
+  "version": "0.3.0",
+  "description": "SendGrid transport for Nodemailer",
+  "main": "src/sendgrid-transport.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sendgrid/nodemailer-sendgrid-transport.git"
+  },
+  "keywords": [
+    "Nodemailer",
+    "SendGrid"
+  ],
+  "author": "SendGrid <community@sendgrid.com> (sendgrid.com)",
+  "contributors": [
+    "Eddie Zaneski <eddiezane@sendgrid.com",
+    "Will Smidlein <ws@sendgrid.com>",
+    "Geoffroy Lesage <geoffroy@starchup.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "sendgrid": "4.5.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.20.1"
+  }
 }
