@@ -16,10 +16,10 @@ function SendGridTransport(options) {
 
   if (!this.options.auth.api_user) {
     // api key
-    this.sendgrid = SendGrid(this.options.auth.api_key);
+    this.sendgrid = SendGrid(this.options.auth.api_key, this.options.options);
   } else {
     // username + password
-    this.sendgrid = SendGrid(this.options.auth.api_user, this.options.auth.api_key);
+    this.sendgrid = SendGrid(this.options.auth.api_user, this.options.auth.api_key, this.options.options);
   }
 }
 

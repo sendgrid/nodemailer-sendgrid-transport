@@ -38,7 +38,7 @@ var options = {
 		api_key: 'SENDGRID_PASSWORD'
 	}
 }
-	
+
 var mailer = nodemailer.createTransport(sgTransport(options));
 ```
 
@@ -61,6 +61,26 @@ mailer.sendMail(email, function(err, res) {
 	}
 	console.log(res);
 });
+```
+
+### Options
+You can pass options, such as proxy settings, to the SendGrid module when creating an instance of the transport.
+
+```javascript
+var nodemailer = require('nodemailer');
+var sgTransport = require('nodemailer-sendgrid-transport');
+
+var options = {
+	auth: {
+		api_user: 'SENDGRID_USERNAME',
+		api_key: 'SENDGRID_PASSWORD'
+	},
+	options: {
+		proxy: 'http://localproxy:3128'
+	}
+}
+
+var mailer = nodemailer.createTransport(sgTransport(options));
 ```
 
 ## Deploying
