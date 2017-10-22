@@ -1,7 +1,15 @@
 # SendGrid Community Code of Conduct
 
-The SendGrid open source community is made up of members from around the globe with a diverse set of skills, personalities, and experiences. It is through these differences that our community experiences successes and continued growth. When you're working with members of the community, we encourage you to follow these guidelines, which help steer our interactions and strive to maintain a positive, successful and growing community. 
+The SendGrid open source community is made up of members from around the globe with a diverse set of skills, personalities, and experiences. It is through these differences that our community experiences successes and continued growth. When you're working with members of the community, we encourage you to follow these guidelines, which help steer our interactions and strive to maintain a positive, successful and growing community.
 
+## Table of Contents
+- [Code of Conduct](#code-of-conduct)
+- [Additional Guidance](#additional-guidance)
+- [Conduct Concerns](#conduct-concerns)
+- [Submission to SendGrid Repositories](#submission)
+- [Attribution](#attribution)
+
+<a name="code-of-conduct"></a>
 ### Be Open
 Members of the community are open to collaboration, whether it's on pull requests, code reviews, approvals, issues or otherwise. We're receptive to constructive comments and criticism, as the experiences and skill sets of all members contribute to the whole of our efforts. We're accepting of all who wish to take part in our activities, fostering an environment where anyone can participate, and everyone can make a difference.
 
@@ -11,6 +19,7 @@ Members of the community are considerate of their peers, which include other con
 ### Be Respectful
 Members of the community are respectful. We're respectful of others, their positions, their skills, their commitments and their efforts. We're respectful of the volunteer efforts that permeate the SendGrid community. We're respectful of the processes outlined in the community, and we work within them. When we disagree, we are courteous in raising our issues.  Overall, we're good to each other. We contribute to this community not because we have to, but because we want to. If we remember that, these guidelines will come naturally.
 
+<a name="additional-guidance"></a>
 ## Additional Guidance 
 
 ### Disclose Potential Conflicts of Interest
@@ -22,6 +31,7 @@ This Code is not exhaustive or complete. It is not a rulebook; it serves to dist
 ### Enforcement
 Most members of the SendGrid community always comply with this Code, not because of the existence of this Code, but because they have long experience participating in open source communities where the conduct described above is normal and expected. However, failure to observe this Code may be grounds for suspension, reporting the user for abuse or changing permissions for outside contributors.
 
+<a name="conduct-concerns"></a>
 ## If you have concerns about someone’s conduct
 **Initiate Direct Contact** - It is always appropriate to email a community member (if contact information is available), mention that you think their behavior was out of line, and (if necessary) point them to this Code.
 
@@ -29,17 +39,15 @@ Most members of the SendGrid community always comply with this Code, not because
 
 **Contact the Moderators** - You can reach the SendGrid moderators by emailing dx@sendgrid.com.
 
+<a name="submission"></a>
 ## Submission to SendGrid Repositories
 Finally, just a reminder, changes to the SendGrid repositories will only be accepted upon completion of the [SendGrid Contributor Agreement](https://cla.sendgrid.com). 
 
+<a name="attribution"></a>
 ## Attribution
 
 SendGrid thanks the following, on which it draws for content and inspiration:
 
-* [Python Community Code of Conduct](https://www.python.org/psf/codeofconduct/)  
-* [Open Source Initiative General Code of Conduct](https://opensource.org/codeofconduct) 
-* [Apache Code of Conduct](https://www.apache.org/foundation/policies/conduct.html) 
-
-
-
-
+* [Python Community Code of Conduct](https://www.python.org/psf/codeofconduct/)
+* [Open Source Initiative General Code of Conduct](https://opensource.org/codeofconduct)
+* [Apache Code of Conduct](https://www.apache.org/foundation/policies/conduct.html)
