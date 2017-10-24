@@ -39,16 +39,6 @@ var options = {
 		api_key: 'SENDGRID_APIKEY'
 	}
 }
-
-// or
-
-// username + password
-var options = {
-	auth: {
-		api_user: 'SENDGRID_USERNAME',
-		api_key: 'SENDGRID_PASSWORD'
-	}
-}
 	
 var mailer = nodemailer.createTransport(sgTransport(options));
 ```
@@ -63,7 +53,8 @@ var email = {
 	from: 'roger@tacos.com',
 	subject: 'Hi there',
 	text: 'Awesome sauce',
-	html: '<b>Awesome sauce</b>'
+	html: '<b>Awesome sauce</b>',
+	categories: ['Welcome Email', 'Receipt Email']
 };
 
 mailer.sendMail(email, function(err, res) {

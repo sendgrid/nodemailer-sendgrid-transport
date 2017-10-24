@@ -3,8 +3,7 @@ var sgTransport = require('../src/sendgrid-transport.js');
 
 var options = {
     auth: {
-        api_user: process.env['SENDGRID_USERNAME'],
-        api_key: process.env['SENDGRID_PASSWORD']
+        api_key: process.env['SENDGRID_API_KEY']
     }
 }
 
@@ -16,17 +15,15 @@ var email = {
     subject: 'Hi there',
     text: 'Awesome sauce',
     html: '<b>Awesome sauce</b>',
-    attachments: [
-      {
+    attachments: [{
         filename: 'test.txt',
         path: __dirname + '/test.txt'
-      }
-    ]
+    }]
 };
 
 mailer.sendMail(email, function(err, res) {
-    if (err) { 
-        console.log(err) 
+    if (err) {
+        console.log(err)
     }
     console.log(res);
 });
