@@ -6,8 +6,6 @@ node_js:
 - iojs
 before_install:
 - npm install -g npm@next
-script:
-  - yarn test:files.spec
 notifications:
   hipchat:
     rooms:
