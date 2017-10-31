@@ -37,7 +37,7 @@ Quick links:
 - [Bug Reports](https://github.com/sendgrid/nodemailer-sendgrid-transport/blob/master/CONTRIBUTING.md#submit-a-bug-report)
 - [Sign the CLA to Create a Pull Request](https://github.com/sendgrid/nodemailer-sendgrid-transport/blob/master/CONTRIBUTING.md)
 - [Improvements to the Codebase](https://github.com/sendgrid/nodemailer-sendgrid-transport/blob/master/CONTRIBUTING.md#improvements-to-the-codebase)
-- [Review Pull Requests](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md#code-reviews)
+- [Review Pull Requests](https://github.com/sendgrid/nodemailer-sendgrid-transport/blob/master/CONTRIBUTING.md#code-reviews)
 
 <a name="license"></a>
 ## License
