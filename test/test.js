@@ -3,8 +3,8 @@ var should      = require('should');
 var fs          = require('fs');
 
 describe('nodemailer-sendgrid-transport repo', function() {
-  it('should have ./Docker or docker/Docker file', function() {
-    assert(fileExists('Docker') || fileExists('docker/Docker'));
+  it('should have ./Dockerfile or docker/Dockerfile', function() {
+    assert(fileExists('Dockerfile') || fileExists('docker/Dockerfile'));
   });
 
   it('should have ./docker-compose.yml or ./docker/docker-compose.yml file', function() {
