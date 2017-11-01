@@ -44,7 +44,7 @@ describe('nodemailer-sendgrid-transport repo', function() {
   });
 
   it('should have ./LICENSE.md file', function() {
-    assert(fileExists('LICENSE.md'));
+    assert(fileExists('LICENSE.md') || fileExists('LICENSE.txt'));
   });
 
   it('should have ./.github/PULL_REQUEST_TEMPLATE file', function() {
