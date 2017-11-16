@@ -18,12 +18,26 @@ This module is a transport plugin for [Nodemailer](https://github.com/andris9/No
 
 ## Table of Contents
 - [Usage](#usage)
+- [How to Contribute](#contribute)
 - [Deploying](#deploying)
 - [License](#license)
 
 <a name="usage"></a>
 ## Usage
 [Library Usage Documentation](USAGE.md)
+
+<a name="contribute"></a>
+# How to Contribute
+
+We encourage contribution to our libraries, please see our [CONTRIBUTING](https://github.com/sendgrid/nodemailer-sendgrid-transport/blob/master/CONTRIBUTING.md) guide for details.
+
+Quick links:
+
+- [Feature Request](https://github.com/sendgrid/nodemailer-sendgrid-transport/blob/master/CONTRIBUTING.md#feature-request)
+- [Bug Reports](https://github.com/sendgrid/nodemailer-sendgrid-transport/blob/master/CONTRIBUTING.md#submit-a-bug-report)
+- [Sign the CLA to Create a Pull Request](https://github.com/sendgrid/nodemailer-sendgrid-transport/blob/master/CONTRIBUTING.md)
+- [Improvements to the Codebase](https://github.com/sendgrid/nodemailer-sendgrid-transport/blob/master/CONTRIBUTING.md#improvements-to-the-codebase)
+- [Review Pull Requests](https://github.com/sendgrid/nodemailer-sendgrid-transport/blob/master/CONTRIBUTING.md#code-reviews)
 
 <a name="license"></a>
 ## License
