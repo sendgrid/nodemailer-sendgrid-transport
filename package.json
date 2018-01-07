@@ -21,10 +21,10 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "sendgrid": "^1.8.0"
+    "sendgrid": "^5.2.3"
   },
   "devDependencies": {
-    "chai": "^1.9.1",
-    "mocha": "^1.20.1"
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0"
   }
 }
