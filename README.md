@@ -12,6 +12,8 @@
 
 Please direct any questions to the [Developer Experience](mailto:dx@sendgrid.com) team.
 
+You can try https://github.com/sendgrid/sendgrid-nodejs as a replacement.
+
 # nodemailer-sendgrid-transport
 
 This module is a transport plugin for [Nodemailer](https://github.com/andris9/Nodemailer) that makes it possible to send through [SendGrid's Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)!
